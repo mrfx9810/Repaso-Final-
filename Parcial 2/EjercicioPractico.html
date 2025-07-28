@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de caudal en una tuberia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de caudal tuberia</h1>
+
+  <label for="tipo">Seleccione valor a calcular:</label>
+  <select id="tipo" onchange="cambiarFormulario()">
+    <option value="">-- Selecionar --</option>
+    <option value="circular">Tubería Circular</option>
+    <option value="rectangular">Tubería Rectangular</option>
+    <option value="directa">Sección directa</option>
+  </select>
+
+  <div id="formulario"></div>
+
+  <div id="resultado"></div>
+
+  <button onclick="calcular()">Calcular</button>
+  <button onclick="limpiar()">Limpiar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
